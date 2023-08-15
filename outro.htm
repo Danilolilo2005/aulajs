@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sla(){
+            var nome=  document.dois.nome.value
+            var nota1= parseFloat(document.dois.nota1.value)
+            var nota2=  parseFloat(document.dois.nota2.value)
+            var nota3=  parseFloat(document.dois.nota3.value)
+            var nota4= parseFloat(document.dois.nota4.value)
+
+            resultado=(nota1 + nota2 + nota3 + nota4)/4
+            alert(nome+ " sua nota é " +resultado)
+        }
+    </script>
+    <form name="dois">
+        Nome:<input type="text" name="nome"><br><br>
+        nota1:<input type="text" name="nota1"><br><br>
+        nota2:<input type="text" name="nota2"><br><br>
+        nota3:<input type="text" name="nota3"><br><br>
+        nota4:<input type="text" name="nota4"><br><br>
+        <input type="button" value="confirm" onClick="sla()">
+    </form>
+</body>
+</html>
